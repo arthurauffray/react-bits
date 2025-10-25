@@ -1,7 +1,7 @@
 # React Bits - Complete LLM Documentation
 
 **Version:** 1.0  
-**Generated:** 2025-10-25T02:58:45.887Z  
+**Generated:** 2025-10-25T02:59:45.688Z  
 **Repository:** https://github.com/arthurauffray/react-bits  
 **Website:** https://www.reactbits.dev
 
@@ -146,12 +146,22 @@ npx jsrepo add https://reactbits.dev/default/TextAnimations/SplitText
 - **Contributing:** https://github.com/arthurauffray/react-bits/blob/main/CONTRIBUTING.md
 - **License:** https://github.com/arthurauffray/react-bits/blob/main/LICENSE.md
 
+---
+
 ## Key Dependencies
 
-- **GSAP** (https://gsap.com/docs/v3/) - Animation engine used by many motion components
-- **Motion/Framer** (https://www.framer.com/motion/) - Declarative motion primitives
-- **three.js** (https://threejs.org/docs/) - 3D engine for backgrounds and visuals
-- **ogl** (https://github.com/oframe/ogl) - Lightweight WebGL for shader-driven backgrounds
+React Bits components use various third-party libraries to provide rich animations and effects. Here are the main dependencies:
+
+- **GSAP** (https://gsap.com/docs/v3/) - Professional-grade animation engine used by many motion components. Provides high-performance animations with advanced features like ScrollTrigger.
+- **Motion (Framer Motion)** (https://www.framer.com/motion/) - Declarative motion primitives for React. Used for enter/exit animations, gestures, and stagger effects.
+- **three.js** (https://threejs.org/docs/) - Powerful 3D engine for backgrounds and interactive 3D visuals. Creates immersive WebGL experiences.
+- **ogl** (https://github.com/oframe/ogl) - Lightweight WebGL library. Used for shader-driven backgrounds with minimal overhead.
+- **@react-three/fiber** (https://docs.pmnd.rs/react-three-fiber/) - React renderer for three.js. Makes 3D components more React-friendly.
+- **@react-three/drei** (https://github.com/pmnd-rs/drei) - Useful helpers for react-three-fiber. Provides common 3D components and utilities.
+- **@use-gesture/react** (https://use-gesture.netlify.app/) - Library for handling complex gestures and pointer interactions.
+- **lenis** (https://lenis.studiofreight.com/) - Smooth scroll library for creating buttery smooth scrolling experiences.
+
+**Note:** Not all components require all dependencies. Each component lists its specific dependencies in its documentation section below.
 
 ---
 
