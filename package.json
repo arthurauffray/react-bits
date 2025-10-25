@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run jsrepo:build && npm run shadcn:build && npm run llms:text && vite build",
+    "build": "npm run jsrepo:build && npm run shadcn:build && npm run llms:text && npm run llms:docs && vite build",
     "new:component": "node scripts/generateComponent.js",
     "shadcn:build": "npm run shadcn:generate && shadcn build",
     "shadcn:generate": "node ./scripts/generateShadcnRegistry.js",
     "llms:text": "node ./scripts/generateLlmsText.js",
+    "llms:docs": "node ./scripts/generateLLMDocumentation.js",
     "jsrepo:build": "concurrently -p \"[{name}]\" -n \"default,tailwind,ts-default,ts-tailwind,readmes\" \"npm run jsrepo:default\" \"npm run jsrepo:tailwind\" \"npm run jsrepo:ts-default\" \"npm run jsrepo:ts-tailwind\" \"node ./scripts/generateJsrepoReadmes.js\"",
     "jsrepo:default": "jsrepo build --dirs ./src/content --output-dir ./public/default",
     "jsrepo:tailwind": "jsrepo build --dirs ./src/tailwind --output-dir ./public/tailwind",
