@@ -297,11 +297,16 @@ function formatPropsTable(props) {
   lines.push('| Prop | Type | Default | Description |');
   lines.push('|------|------|---------|-------------|');
   
+  // Helper to escape markdown table special characters
+  const escapeMarkdownTable = (str) => {
+    return str.replace(/\\/g, '\\\\').replace(/\|/g, '\\|');
+  };
+  
   for (const prop of props) {
     const name = prop.name;
-    const type = prop.type.replace(/\|/g, '\\|');
-    const defaultVal = prop.default.replace(/\|/g, '\\|');
-    const desc = prop.description.replace(/\|/g, '\\|');
+    const type = escapeMarkdownTable(prop.type);
+    const defaultVal = escapeMarkdownTable(prop.default);
+    const desc = escapeMarkdownTable(prop.description);
     lines.push(`| ${name} | ${type} | ${defaultVal} | ${desc} |`);
   }
   

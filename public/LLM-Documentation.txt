@@ -1,7 +1,7 @@
 # React Bits - Complete LLM Documentation
 
 **Version:** 1.0  
-**Generated:** 2025-10-25T02:59:45.688Z  
+**Generated:** 2025-10-25T03:03:31.507Z  
 **Repository:** https://github.com/arthurauffray/react-bits  
 **Website:** https://www.reactbits.dev
 
